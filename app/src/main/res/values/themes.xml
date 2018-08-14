@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="colorAccent">@color/colorDark</item>
+        <item name="colorPrimary">@color/colorDark</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.Guillotine"/>
+
+    <style name="Theme.Guillotine" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:colorPrimaryDark" tools:targetApi="lollipop">@color/guillotine_background</item>
+        <item name="android:colorPrimary" tools:targetApi="lollipop">@color/guillotine_background_dark</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+</resources>

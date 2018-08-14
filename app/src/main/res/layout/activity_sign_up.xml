@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightBackground"
+    tools:context=".auth.SignUpActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/email_editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:text="IT"
+            android:textColor="#d95151"
+            android:textSize="45sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:text="HUNTER"
+            android:textColor="#ae4b4b"
+            android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:text=".TECH"
+            android:textColor="#ae4b4b"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/back_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/coda"
+        android:text="&lt; Sign Up"
+        android:textColor="@color/colorBaseText"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email_editText"
+        android:layout_width="@dimen/width_login_edit_text"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="270dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/colorLightBaseText"
+        android:ems="14"
+        android:fontFamily="@font/coda"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorBaseText"
+        android:textColorHint="@color/colorLightBaseText"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        fancy:layout_constraintEnd_toEndOf="parent"
+        fancy:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/password_editText"
+        android:layout_width="@dimen/width_login_edit_text"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/colorLightBaseText"
+        android:ems="14"
+        android:fontFamily="@font/coda"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColor="@color/colorBaseText"
+        android:textColorHint="@color/colorLightBaseText"
+        android:textSize="@dimen/text_size"
+        fancy:layout_constraintEnd_toEndOf="parent"
+        fancy:layout_constraintStart_toStartOf="parent"
+        fancy:layout_constraintTop_toBottomOf="@+id/email_editText" />
+
+    <EditText
+        android:id="@+id/confirm_password_editText"
+        android:layout_width="@dimen/width_login_edit_text"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/colorLightBaseText"
+        android:ems="14"
+        android:fontFamily="@font/coda"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:textColor="@color/colorBaseText"
+        android:textColorHint="@color/colorLightBaseText"
+        android:textSize="@dimen/text_size"
+        fancy:layout_constraintEnd_toEndOf="parent"
+        fancy:layout_constraintStart_toStartOf="parent"
+        fancy:layout_constraintTop_toBottomOf="@+id/password_editText"
+        tools:ignore="MissingConstraints" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/sign_up_button"
+        android:layout_width="284dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_password_editText"
+        fancy:fb_defaultColor="@color/colorSignUpButton"
+        fancy:fb_focusColor="@color/colorSignUpButtonPressed"
+        fancy:fb_radius="5dp"
+        fancy:fb_text="@string/sign_up"
+        fancy:fb_textColor="@color/colorWhite"
+        fancy:fb_textFont="fonts/Coda-Regular.ttf"
+        fancy:fb_textSize="@dimen/text_size"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/login_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/coda"
+        android:text="Log Into Existing Account"
+        android:textColor="@color/colorBaseText"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

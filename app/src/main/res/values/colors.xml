@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorBaseText">#da1a1616</color>
+    <color name="colorLightBaseText">#c01a1616</color>
+    <color name="colorLightBackground">#faf7f6f6</color>
+    <color name="colorDarkBorder">#282828</color>
+
+    <color name="colorLoginButton">#363645</color>
+    <color name="colorLoginButtonPressed">#73738e</color>
+    <color name="colorSignUpButton">#363645</color>
+    <color name="colorSignUpButtonPressed">#73738e</color>
+    <color name="colorBackButton">#444458</color>
+    <color name="colorBackButtonPressed">#73738e</color>
+
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorRed">#a23a3a</color>
+    <color name="colorWhite">#f1f0f0</color>
+    <color name="colorDarkBackground">#dc52415a</color>
+    <color name="colorDialogBackground">#385c6f</color>
+    <color name="colorButtonTextDialog">#385c6f</color>
+    <color name="colorDark">#191414</color>
+    <color name="colorDarkLight">#da1a1616</color>
+    <color name="colorLight">#ffffff</color>
+
+    <color name="colorDarkButton">#3b3b3b</color>
+
+    <color name="guillotine_background">#444153</color>
+    <color name="guillotine_background_dark">#383547</color>
+    <color name="selected_item_color">#30d1d5</color>
+    <color name="custom_progress_orange_header">#ffffbb33</color>
+    <color name="custom_progress_orange_progress">#ffff8800</color>
+    <color name="custom_progress_orange_progress_half">#7fff8800</color>
+    <color name="background_dark">#ff363636</color>
+    <color name="background_content">#4a6581</color>
+
+
+
+    <color name="color_background">#DEDEE6</color>
+</resources>

@@ -1,0 +1,51 @@
+<resources>
+    <string name="server_client_id" translatable="false">624053706846-8hcgsj14cpnui4tcrhrjnm6i4636ufkm.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">304057810343033</string>
+    <string name="fb_login_protocol_scheme">fb304057810343033</string>
+
+    <string name="app_name">ITHunter</string>
+    <string name="full_app_name">IT Hunter</string>
+    <string name="title_activity_main">Main</string>
+
+    <!-- Start Activity | Messages and Labels -->
+    <string name="app_description">Search for employees, partners\nand teams</string>
+
+    <!-- Log In & Sign Up | Messages and Labels -->
+    <string name="log_in">Log In</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="no_account_yet">No account yet?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in_with_social_account">Or sign in with a social account</string>
+    <string name="forgot_password_question">Forgot password?</string>
+    <string name="forgot_password_instruction">We just need your registered Email to sent you password reset instruction</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="reset_password">Reset password</string>
+    <string name="cancel">Cancel</string>
+    <string name="back">Go to Back</string>
+    <string name="ok" translatable="false">Ok</string>
+    <string name="email_sent">Email sent</string>
+    <string name="email">Email</string>
+
+    <!-- Error Messages -->
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_passwords_do_not_match">Passwords don\'t match</string>
+    <string name="error_email_taken">This Email is already taken</string>
+    <string name="error_email_is_exist">A user with this email address is already registered.</string>
+    <string name="error_google_auth">Google authentication failed. Maybe a user with this email address is already registered.</string>
+    <string name="error_facebook_auth">Facebook authentication failed. Maybe a user with this email address is already registered.</string>
+    <string name="error_twitter_auth">Twitter authentication failed. Maybe a user with this email address is already registered.</string>
+    <string name="error_no_network_connection">No network connection.\nRestore your network connection and try again.</string>
+    <string name="error_email_sent">Email not sent</string>
+    <string name="error_sign_up_failed">Sign Up failed</string>
+
+    <!-- Warning Messages -->
+    <string name="warning_auth_canceled">Auth canceled</string>
+    <string name="warning_google_auth_canceled">Google auth canceled</string>
+    <string name="warning_facebook_auth_canceled">Facebook auth canceled</string>
+    <string name="warning_twitter_auth_canceled">Twitter auth canceled</string>
+    <string name="warning_sign_up_canceled">Sign Up canceled</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Log In & Sign Up & Reset Password page values -->
+    <dimen name="width_rounded_background">310dp</dimen>
+    <dimen name="height_rounded_background">280dp</dimen>
+    <dimen name="text_size_rounded_background_title">20sp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="size_social_icon">40dp</dimen>
+    <dimen name="size_arrow_right">25dp</dimen>
+    <dimen name="width_login_button">285dp</dimen>
+    <dimen name="height_login_button">50dp</dimen>
+    <dimen name="width_login_edit_text">290dp</dimen>
+    <dimen name="radius_round">20dp</dimen>
+    <dimen name="height_back_button">40dp</dimen>
+    <dimen name="width_back_button">285dp</dimen>
+    <dimen name="width_sign_up_button">285dp</dimen>
+    <dimen name="height_sign_up_button">42dp</dimen>
+    <dimen name="height_sign_up_rounded_background">278dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>
