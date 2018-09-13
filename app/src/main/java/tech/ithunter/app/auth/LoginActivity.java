@@ -2,16 +2,17 @@ package tech.ithunter.app.auth;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.transition.Fade;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCanceledListener;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -21,7 +22,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 import mehdi.sakout.fancybuttons.FancyButton;
-import tech.ithunter.app.FormActivity;
+import tech.ithunter.app.form.FormActivity;
 import tech.ithunter.app.R;
 import tech.ithunter.app.check.CheckNetwork;
 import tech.ithunter.app.notice.Notice;
@@ -42,6 +43,7 @@ public class LoginActivity extends AppCompatActivity {
         try {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_login);
+            setupWindowAnimations();
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
             initializeComponents();
 
@@ -62,6 +64,20 @@ public class LoginActivity extends AppCompatActivity {
             clearEditTextFocus();
             Notice.showErrorInTSnackBar(LoginActivity.this, loginButton, e.toString());
         }
+    }
+
+    private void setupWindowAnimations() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Fade fade = new Fade();
+            fade.setDuration(2000);
+            getWindow().setEnterTransition(fade);
+        }
+    }
+
+    @Override
+    public void onBackPressed(){
+        super.onBackPressed();
+        //Bungee.swipeRight(getApplicationContext());
     }
 
     private void loginWithEmailAndPassword(String email, String password) {

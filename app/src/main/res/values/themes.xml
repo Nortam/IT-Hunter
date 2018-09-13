@@ -8,7 +8,10 @@
         <item name="colorPrimary">@color/colorDark</item>
     </style>
 
-    <style name="AppTheme" parent="Theme.Guillotine"/>
+    <style name="AppTheme" parent="Theme.Guillotine">
+        <item name="colorAccent">@color/colorLightBaseText</item>
+        <item name="android:textColorSecondary">@color/background_text_color</item>
+    </style>
 
     <style name="Theme.Guillotine" parent="Theme.AppCompat.NoActionBar">
         <item name="android:colorPrimaryDark" tools:targetApi="lollipop">@color/guillotine_background</item>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".form.fragments.FormFragment01">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <net.steamcrafted.materialiconlib.MaterialIconView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="center"
+            app:materialIcon="account"
+            app:materialIconColor="@color/colorLightBaseText"
+            app:materialIconSize="24dp" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Name"
+            android:maxLines="2"
+            android:textColor="@color/colorLightBaseText"
+            android:textSize="@dimen/text_size"
+            app:met_floatingLabel="normal"
+            app:met_iconPadding="0dp"
+            app:met_singleLineEllipsis="true" />
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:id="@+id/sex_linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male_radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:fontFamily="@font/roboto_light"
+                android:text="Male"
+                android:textColor="@color/colorLightBaseText"
+                android:textSize="@dimen/text_size" />
+
+            <RadioButton
+                android:id="@+id/female_radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:fontFamily="@font/roboto_light"
+                android:text="Female"
+                android:textColor="@color/colorLightBaseText"
+                android:textSize="@dimen/text_size" />
+        </RadioGroup>
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sex_linearLayout">
+
+        <net.steamcrafted.materialiconlib.MaterialIconView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="0dp"
+            android:scaleType="center"
+            app:materialIcon="calendar_today"
+            app:materialIconColor="@color/colorLightBaseText"
+            app:materialIconSize="24dp" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Date of Birth"
+            android:textColor="@color/colorLightBaseText"
+            android:textSize="@dimen/text_size"
+            app:met_floatingLabel="normal"
+            app:met_iconPadding="0dp"
+            app:met_maxCharacters="30"
+            app:met_singleLineEllipsis="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <net.steamcrafted.materialiconlib.MaterialIconView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="0dp"
+            android:scaleType="center"
+            app:materialIcon="email_outline"
+            app:materialIconColor="@color/colorLightBaseText"
+            app:materialIconSize="24dp" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Email"
+            android:textColor="@color/colorLightBaseText"
+            android:textSize="@dimen/text_size"
+            app:met_floatingLabel="normal"
+            app:met_iconPadding="0dp"
+            app:met_maxCharacters="30"
+            app:met_singleLineEllipsis="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+        <net.steamcrafted.materialiconlib.MaterialIconView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="0dp"
+            android:scaleType="center"
+            app:materialIcon="map_marker"
+            app:materialIconColor="@color/colorLightBaseText"
+            app:materialIconSize="24dp" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_light"
+            android:hint="City"
+            android:maxLines="2"
+            android:textColor="@color/colorLightBaseText"
+            android:textSize="@dimen/text_size"
+            app:met_floatingLabel="normal"
+            app:met_iconPadding="0dp"
+            app:met_maxCharacters="30"
+            app:met_singleLineEllipsis="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sex_linearLayout"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:orientation="horizontal"
+        android:gravity="center|left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <net.steamcrafted.materialiconlib.MaterialIconView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:paddingLeft="0dp"
+            android:scaleType="center"
+            app:materialIcon="gender_male_female"
+            app:materialIconColor="@color/colorLightBaseText"
+            app:materialIconSize="24dp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male_radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:fontFamily="@font/roboto_light"
+                android:text="Male"
+                android:textColor="@color/colorLightBaseText"
+                android:textSize="@dimen/text_size" />
+
+            <RadioButton
+                android:id="@+id/female_radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:fontFamily="@font/roboto_light"
+                android:text="Female"
+                android:textColor="@color/colorLightBaseText"
+                android:textSize="@dimen/text_size" />
+        </RadioGroup>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

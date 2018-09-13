@@ -21,7 +21,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.ProviderQueryResult;
 
 import mehdi.sakout.fancybuttons.FancyButton;
-import tech.ithunter.app.FormActivity;
+import tech.ithunter.app.form.FormActivity;
 import tech.ithunter.app.R;
 import tech.ithunter.app.check.CheckNetwork;
 import tech.ithunter.app.notice.Notice;

@@ -1,9 +1,12 @@
 package tech.ithunter.app.auth;
 
 import android.content.Intent;
+import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.transition.Fade;
+import android.transition.Slide;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -34,7 +37,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 import com.google.firebase.auth.ProviderQueryResult;
 
-import tech.ithunter.app.FormActivity;
+import tech.ithunter.app.form.FormActivity;
 import tech.ithunter.app.R;
 import tech.ithunter.app.notice.Notice;
 
@@ -56,6 +59,7 @@ public class StartActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        setupWindowAnimations();
         initializeComponents();
 
         // Configure Firebase
@@ -84,6 +88,18 @@ public class StartActivity extends AppCompatActivity {
                 Notice.showWarningToast(StartActivity.this, R.string.error_facebook_auth);
             }
         });
+    }
+
+    private void setupWindowAnimations() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Slide slide = new Slide();
+            slide.setDuration(20000);
+            getWindow().setExitTransition(slide);
+
+            Fade fade = new Fade();
+            fade.setDuration(20000);
+            getWindow().setEnterTransition(fade);
+        }
     }
 
     @Override
@@ -122,6 +138,7 @@ public class StartActivity extends AppCompatActivity {
             if (user != null) {
                 //Toast.makeText(getApplicationContext(), "Is connected", Toast.LENGTH_LONG).show();
                 startActivity(new Intent(this, FormActivity.class));
+                //Bungee.swipeLeft(getApplicationContext());
             }
         } catch (Exception e) {
             Notice.showErrorInTSnackBar(StartActivity.this, emailLayout, e.toString());
@@ -211,6 +228,15 @@ public class StartActivity extends AppCompatActivity {
         googleButton = (Button) findViewById(R.id.google_button);
         emailLayout = (LinearLayout) findViewById(R.id.layout_email_button);
         emailButton = (Button) findViewById(R.id.email_button);
+
+        facebookButton.post(new Runnable() {
+            @Override
+            public void run() {
+                facebookButton.setWidth(facebookButton.getWidth());
+                googleButton.setWidth(facebookButton.getWidth());
+                emailButton.setWidth(facebookButton.getWidth());
+            }
+        });
 
         setListenersForComponents();
     }

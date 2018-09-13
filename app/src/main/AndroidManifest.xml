@@ -62,7 +62,7 @@
             android:name=".auth.ResetPasswordActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeNoActionBar"></activity>
-        <activity android:name=".FormActivity"></activity>
+        <activity android:name=".form.FormActivity"></activity>
     </application>
 
 </manifest>

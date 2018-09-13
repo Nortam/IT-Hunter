@@ -22,6 +22,28 @@
         android:scaleType="centerCrop"
         android:src="@drawable/login_background_image" />
 
+    <com.github.glomadrian.grav.GravView
+        android:id="@+id/grav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        app:colorGenerator="com.github.glomadrian.grav.generator.paint.ArrayColorGenerator"
+        app:array_colors="@array/bubble"
+        app:pointGenerator="com.github.glomadrian.grav.generator.point.RegularPointGenerator"
+        app:regular_cell_size="300"
+        app:regular_variance="200"
+        app:gravGenerator="com.github.glomadrian.grav.generator.grav.BallGenerator"
+        app:ball_from_size="3dp"
+        app:ball_to_size="5dp"
+        app:animationGenerators="@array/BubbleAnimations"
+        app:side_to_side_min_duration="20000"
+        app:side_to_side_max_duration="20000"
+        app:side_to_side_direction="leftToRight"
+        app:shake_direction="vertical"
+        app:shake_min_duration="20000"
+        app:shake_max_duration="25000"
+        app:shake_variance="500dp" />
+
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="wrap_content"
@@ -83,7 +105,7 @@
             android:text="@string/app_description"
             android:textAlignment="center"
             android:textColor="@color/colorLightBaseText"
-            android:textSize="15sp"
+            android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
@@ -92,12 +114,10 @@
 
     <LinearLayout
         android:id="@+id/layout_facebook_button"
-        android:layout_width="228dp"
+        android:layout_width="wrap_content"
         android:layout_height="43dp"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
         android:background="@drawable/rounded_corner"
         android:gravity="center"
         android:orientation="horizontal"
@@ -112,7 +132,7 @@
             android:src="@mipmap/ic_facebook" />
 
         <View
-            android:layout_width="1dp"
+            android:layout_width="0.5dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
@@ -126,22 +146,20 @@
             android:layout_marginStart="10dp"
             android:layout_weight="1"
             android:background="@android:color/transparent"
-            android:fontFamily="@font/roboto_condensed_bold"
+            android:fontFamily="@font/roboto_thin"
             android:text="Continue with Facebook"
             android:textAlignment="viewStart"
             android:textAllCaps="false"
             android:textColor="#ffffff"
-            android:textSize="16sp" />
+            android:textSize="15sp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/layout_google_button"
-        android:layout_width="228dp"
+        android:layout_width="wrap_content"
         android:layout_height="43dp"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
         android:background="@drawable/rounded_corner"
         android:gravity="center"
         android:orientation="horizontal"
@@ -156,7 +174,7 @@
             android:src="@mipmap/ic_google" />
 
         <View
-            android:layout_width="1dp"
+            android:layout_width="0.5dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
@@ -164,33 +182,30 @@
 
         <Button
             android:id="@+id/google_button"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
             android:layout_weight="1"
             android:background="@android:color/transparent"
-            android:fontFamily="@font/roboto_condensed_bold"
+            android:fontFamily="@font/roboto_thin"
             android:text="Continue with Google"
             android:textAlignment="viewStart"
             android:textAllCaps="false"
             android:textColor="#ffffff"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textSize="15sp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/layout_email_button"
-        android:layout_width="228dp"
+        android:layout_width="wrap_content"
         android:layout_height="43dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginBottom="25dp"
         android:background="@drawable/rounded_corner"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -201,7 +216,7 @@
             android:src="@mipmap/ic_email" />
 
         <View
-            android:layout_width="1dp"
+            android:layout_width="0.5dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
@@ -209,19 +224,79 @@
 
         <Button
             android:id="@+id/email_button"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
             android:layout_weight="1"
             android:background="@android:color/transparent"
-            android:fontFamily="@font/roboto_condensed_bold"
+            android:fontFamily="@font/roboto_thin"
             android:text="Continue with Email"
             android:textAlignment="viewStart"
             android:textAllCaps="false"
             android:textColor="#ffffff"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_thin"
+            android:text="@string/privacy_policy_and_terms_of_use_message"
+            android:textAlignment="center"
+            android:textColor="#DDEFEFEF"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Hyperlink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Terms of Use"
+                android:textColor="#4963a1"
+                android:fontFamily="@font/roboto_thin"
+                android:textSize="13sp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_thin"
+                android:text="@string/and_symbol"
+                android:textAlignment="center"
+                android:textColor="#DDEFEFEF"
+                android:textSize="13sp" />
+
+            <TextView
+                style="@style/Hyperlink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy"
+                android:textColor="#4963a1"
+                android:fontFamily="@font/roboto_thin"
+                android:textSize="13sp"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
