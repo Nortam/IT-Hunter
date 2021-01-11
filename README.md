@@ -1,5 +1,4 @@
-# ITHunter
-<b>Incomplete project</b>, whose goal is to simplify the task of finding a partner, employee or team in the field of information technology
+# Android Sign In and Sign Up Design
 
 <p align="center">
   <img src="https://github.com/Nortam/ITHunter/blob/master/Screenshots/01_start.jpg" width="250" title="start"/>
