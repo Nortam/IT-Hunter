@@ -1,4 +1,4 @@
-# Android Sign In and Sign Up Design
+# Android App Design
 
 <p align="center">
   <img src="https://github.com/Nortam/ITHunter/blob/master/Screenshots/01_start.jpg" width="250" title="start"/>
